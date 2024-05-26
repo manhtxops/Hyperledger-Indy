@@ -120,7 +120,7 @@ services:
       dockerfile: agent.dockerfile
     command: "bash -c 'sleep 10; npm start'"
     environment:
-      - ICON_SRC=https://maxcdn.icons8.com/Share/icon/Users/person_female1600.png
+      - ICON_SRC=https://cdn3.vectorstock.com/i/1000x1000/37/37/government-icon-vector-20723737.jpg
       - THEME=DarkGray
       - PORT=3000
       - NAME=Alice
