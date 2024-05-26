@@ -86,10 +86,10 @@ router.post('/proofs/send_request', auth.isLoggedIn, async function(req, res) {
 router.post('/proofs/validate', auth.isLoggedIn, async function(req, res) {
     try {
         let proof = req.body;
-        if (await indy.proofs.validate(proof)) {
+        if (!(await indy.proofs.validate(proof))) {
             res.status(200).send();
         } else {
-            res.status(200).send();
+            res.status(400).send();
         }
     } catch(err) {
         res.status(500).send();
