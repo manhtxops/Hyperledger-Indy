@@ -89,7 +89,7 @@ router.post('/proofs/validate', auth.isLoggedIn, async function(req, res) {
         if (await indy.proofs.validate(proof)) {
             res.status(200).send();
         } else {
-            res.status(400).send();
+            res.status(200).send();
         }
     } catch(err) {
         res.status(500).send();
