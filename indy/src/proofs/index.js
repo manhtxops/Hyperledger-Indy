@@ -26,7 +26,7 @@ exports.getProofRequests = async function(force) {
                 },
                 'attr2_referent': {
                     'name': 'name',
-                    'restrictions': [{'cred_def_id': transcriptCredDef.id}]
+                    'restrictions': [{'cred_def_id': await indy.did.getGovIdCredDefId()}]
                 },
             },
             requested_predicates: {}
