@@ -127,6 +127,7 @@ services:
       - EMAIL=manhkma@gmail.com
       - PASSWORD=123
       - USERNAME=manh
+      - TAX_ID=23-596-125
       - PUBLIC_DID_ENDPOINT=173.17.0.150:3000
       - RUST_LOG=${RUST_LOG}
       - TEST_POOL_IP=${TEST_POOL_IP}
@@ -154,6 +155,7 @@ services:
       - EMAIL=cahn@gov.vn
       - PASSWORD=123
       - USERNAME=cahn
+      - TAX_ID=56-896-287
       - PUBLIC_DID_ENDPOINT=173.17.0.170:3001
       - RUST_LOG=${RUST_LOG}
       - TEST_POOL_IP=${TEST_POOL_IP}
@@ -179,9 +181,10 @@ services:
       - THEME=LightSteelBlue
       - PORT=3002
       - NAME=MB Bank
-      - EMAIL=gues@mbbank.com
+      - EMAIL=admin@mbbank.com
       - PASSWORD=123
       - USERNAME=mbbank
+      - TAX_ID=85-896-489
       - PUBLIC_DID_ENDPOINT=173.17.0.180:3002
       - RUST_LOG=${RUST_LOG}
       - TEST_POOL_IP=${TEST_POOL_IP}
