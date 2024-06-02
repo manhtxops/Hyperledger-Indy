@@ -70,7 +70,7 @@ exports.acceptRequest = async function(theirDid, encryptedMessage) {
                 value = "Nam Trực, Nam Định";
                 break;
             case "date_of_issue":
-                value = "20/06/2021";
+                value = "06/2021";
                 break;
             case "residence":
                 value = "Thanh Xuân, Hà Nội";
