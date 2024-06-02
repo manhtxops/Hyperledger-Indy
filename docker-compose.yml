@@ -120,7 +120,7 @@ services:
       dockerfile: agent.dockerfile
     command: "bash -c 'sleep 10; npm start'"
     environment:
-      - ICON_SRC=https://cdn-icons-png.flaticon.com/512/6833/6833591.png
+      - ICON_SRC=https://w7.pngwing.com/pngs/128/123/png-transparent-computer-icons-man-male-businessperson-management-people-public-relations-necktie.png
       - THEME=DarkGray
       - PORT=3000
       - NAME=Xuân Mạnh
@@ -147,7 +147,7 @@ services:
     image: indy-agentjs
     command: "bash -c 'sleep 10; npm start'"
     environment:
-      - ICON_SRC=https://cdn2.iconfinder.com/data/icons/bubble-education-icons-1/360/School-512.png
+      - ICON_SRC=https://upload.wikimedia.org/wikipedia/vi/thumb/3/38/Logo_CAHN_FC.svg/800px-Logo_CAHN_FC.svg.png
       - THEME=OliveDrab
       - PORT=3001
       - NAME=Công an Hà Nội
@@ -175,7 +175,7 @@ services:
     image: indy-agentjs
     command: "bash -c 'sleep 10; npm start'"
     environment:
-      - ICON_SRC=https://i.ytimg.com/vi/JUMufld7UcY/maxresdefault.jpg
+      - ICON_SRC=https://upload.wikimedia.org/wikipedia/commons/2/25/Logo_MB_new.png
       - THEME=LightSteelBlue
       - PORT=3002
       - NAME=MB Bank
