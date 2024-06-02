@@ -24,7 +24,6 @@ exports.getProofRequests = async function(force) {
                     name: 'name',
                     restrictions: [{'cred_def_id': await indy.did.getGovIdCredDefId()}]
                 },
-                }
             },
             requested_predicates: {}
         };
