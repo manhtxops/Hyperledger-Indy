@@ -21,8 +21,12 @@ exports.getProofRequests = async function(force) {
             version: '0.2',
             requested_attributes: {
                 attr1_referent: {
-                    name: 'name',
+                    name: 'no',
                     restrictions: [{'cred_def_id': await indy.did.getGovIdCredDefId()}]
+                },
+                'attr2_referent': {
+                    'name': 'name',
+                    'restrictions': [{'cred_def_id': await indy.did.getGovIdCredDefId()}]
                 },
             },
             requested_predicates: {}
