@@ -27,10 +27,10 @@ exports.getProofRequests = async function(force) {
             },
             requested_predicates: {}
         };
-        let transcriptCredDef = await indy.issuer.getCredDefByTag('MyTranscript');
+        let transcriptCredDef = await indy.issuer.getCredDefByTag('MyCCCD');
         if(transcriptCredDef) {
-            proofRequests['Transcript-Data'] = {
-                name: 'Transcript-Data',
+            proofRequests['CCCD-Data'] = {
+                name: 'CCCD-Data',
                 version: '0.1',
                 requested_attributes: {
                     'attr1_referent': {
