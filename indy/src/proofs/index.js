@@ -28,6 +28,9 @@ exports.getProofRequests = async function(force) {
             requested_predicates: {}
         };
         let transcriptCredDef = await indy.issuer.getCredDefByTag('MyCCCD');
+
+        console.log('transcriptCredDef: ', transcriptCredDef)
+
         if(transcriptCredDef) {
             proofRequests['CCCD-Data'] = {
                 name: 'CCCD-Data',
