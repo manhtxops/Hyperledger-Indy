@@ -58,25 +58,25 @@ exports.acceptRequest = async function(theirDid, encryptedMessage) {
         let value;
         switch(attr) {
             case "name":
-                value = await indy.pairwise.getAttr(theirDid, 'name') || "Alice";
+                value = await indy.pairwise.getAttr(theirDid, 'name') || "Xuân Mạnh";
                 break;
-            case "degree":
-                value = "Bachelor of Science, Marketing";
+            case "no":
+                value = "036245896536";
                 break;
-            case "status":
-                value = "graduated";
+            case "dob":
+                value = "20/02/2002";
                 break;
-            case "ssn":
-                value = "123-45-6789";
+            case "home_town":
+                value = "Nam Trực, Nam Định";
                 break;
-            case "year":
-                value = "2015";
+            case "date_of_issue":
+                value = "06/2021";
                 break;
-            case "average":
-                value = "5";
+            case "residence":
+                value = "Thanh Xuân, Hà Nội";
                 break;
             default:
-                value = "someValue";
+                value = "";
         }
         credentialValues[attr] = {raw: value, encoded: exports.encode(value)};
     }
