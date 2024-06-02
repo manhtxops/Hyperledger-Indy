@@ -149,16 +149,16 @@ services:
     environment:
       - ICON_SRC=https://cdn2.iconfinder.com/data/icons/bubble-education-icons-1/360/School-512.png
       - THEME=OliveDrab
-      - PORT=3002
+      - PORT=3001
       - NAME=Công an Hà Nội
       - EMAIL=cahn@gov.vn
       - PASSWORD=123
       - USERNAME=cahn
-      - PUBLIC_DID_ENDPOINT=173.17.0.170:3002
+      - PUBLIC_DID_ENDPOINT=173.17.0.170:3001
       - RUST_LOG=${RUST_LOG}
       - TEST_POOL_IP=${TEST_POOL_IP}
     ports:
-      - 3002:3002
+      - 3001:3001
     depends_on:
       - node1
       - node2
@@ -177,16 +177,16 @@ services:
     environment:
       - ICON_SRC=https://i.ytimg.com/vi/JUMufld7UcY/maxresdefault.jpg
       - THEME=LightSteelBlue
-      - PORT=3003
+      - PORT=3002
       - NAME=MB Bank
       - EMAIL=gues@mbbank.com
       - PASSWORD=123
       - USERNAME=mbbank
-      - PUBLIC_DID_ENDPOINT=173.17.0.180:3003
+      - PUBLIC_DID_ENDPOINT=173.17.0.180:3002
       - RUST_LOG=${RUST_LOG}
       - TEST_POOL_IP=${TEST_POOL_IP}
     ports:
-      - 3003:3003
+      - 3002:3002
     depends_on:
       - node1
       - node2
